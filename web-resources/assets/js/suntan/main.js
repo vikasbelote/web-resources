@@ -14,6 +14,10 @@ suntanApp.config(function($routeProvider) {
 			templateUrl: '/investment/my.html',
 			controller: 'MyInvestmentController'
 		})
+		.when('/edit-profile', {
+			templateUrl: '/profile.html',
+			controller: 'DashboardController'
+		})
 		.otherwise({
 			redirectTo: '/'
 		});

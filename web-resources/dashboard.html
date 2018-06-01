@@ -144,7 +144,7 @@
 						</span> <b class="caret"></b>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="javascript:;" class="dropdown-item">Edit Profile</a>
+						<a href="#/edit-profile" class="dropdown-item">Edit Profile</a>
 						<a href="javascript:;" class="dropdown-item"><span class="badge badge-danger pull-right">2</span> Inbox</a>
 						<a href="javascript:;" class="dropdown-item">Calendar</a>
 						<a href="javascript:;" class="dropdown-item">Setting</a>
@@ -172,7 +172,7 @@
 							<div class="info">
 								<b class="caret pull-right"></b>
 								{{userData.personModel.firstName + " " + userData.personModel.lastName}}
-								<small>Role description</small>
+								<small>{{userData.authorities[0].authortiName}}</small>
 							</div>
 						</a>
 					</li>
@@ -190,18 +190,17 @@
 					<li class="nav-header">Navigation</li>
 					<li><a href="#/"><i class="fa fa-th-large"></i> <span>Dashboard</span>
 					</a></li>
-					<li class="has-sub"><a href="javascript:;"> <b class="caret"></b>
-							<i class="fa fa-list-ol"></i> <span>Investment</span>
-					</a>
-						<ul class="sub-menu">
-							<li><a href="#/add-investment/">Add Investment <i
-									class="fa fa-paper-plane text-theme m-l-5"></i></a></li>
-							<li><a href="#/my-investment">My Investment </a></li>
+				
+					
+					<li ng-if="userData.authorities[0].authortiName == 'USER'"><a href="#/add-investment/"><i class="fa fa-list-ol"></i> <span>Add Investment</span>
+					</a></li>
+
+					<li ng-if="userData.authorities[0].authortiName == 'USER'"><a href="#/my-investment"><i class="fa fa-list-ol"></i> <span>My Investment</span>
+					</a></li>
+					
+
 		
-						</ul></li>
-		
-		
-					<li class="has-sub"><a href="javascript:;"> <b class="caret"></b><i class="fa fa-table"></i> <span>Trade</span>
+					<li ng-if="userData.authorities[0].authortiName == 'ADMIN'" class="has-sub"><a href="javascript:;"> <b class="caret"></b><i class="fa fa-table"></i> <span>Trade</span>
 					</a>
 						<ul class="sub-menu">
 							<li><a href="trade-history">History</a></li>
@@ -211,18 +210,12 @@
 						</ul>
 					
 					</li>
-					<li><a href="dashboard"><i class="fa fa-star"></i> <span>User</span>
+					<li ng-if="userData.authorities[0].authortiName == 'ADMIN'"><a href="dashboard"><i class="fa fa-star"></i> <span>User</span>
 					</a></li>
-					<li><a href="dashboard"><i class="fa fa-gem"></i> <span>Tax</span>
+					<li ng-if="userData.authorities[0].authortiName == 'ADMIN'"><a href="dashboard"><i class="fa fa-gem"></i> <span>Tax</span>
 					</a></li>
-					<li><a href="outcome"><i class="fa fa-th-large"></i> <span>Santan Outcome</span>
+					<li ng-if="userData.authorities[0].authortiName == 'ADMIN'"><a href="outcome"><i class="fa fa-th-large"></i> <span>Santan Outcome</span>
 					</a></li>
-		
-		
-		
-		
-		
-		
 		
 					<!-- begin sidebar minify button -->
 					<li><a href="javascript:;" class="sidebar-minify-btn"

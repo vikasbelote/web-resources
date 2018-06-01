@@ -6,4 +6,9 @@ suntanApp.controller('DashboardController', function($scope, $http, $rootScope) 
         });   
     }
     $scope.init();
+
+
+    $scope.editProfile = function() {
+        alert(1);
+    }
 });
