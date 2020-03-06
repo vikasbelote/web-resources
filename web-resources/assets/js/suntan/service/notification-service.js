@@ -10,11 +10,19 @@ suntanApp.service("NotificationService", function() {
 
     this.danger = function() {
         swal({
-			title: 'Error occuerd while executing your request',
+			title: 'Error occured while executing your request',
 			text: '',
 			icon: 'error',
 		});
     }
+
+    this.logout = function() {
+            swal({
+    			title: 'Your session is Logout successfully',
+    			text: '',
+    			icon: 'success',
+    		});
+        }
 
     this.warning = function() {
         swal({

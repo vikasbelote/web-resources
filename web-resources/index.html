@@ -5,7 +5,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>Suntan | Group</title>
+	<title>Suntan | Capital</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -39,9 +39,11 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a href="index.html" class="navbar-brand">
-                        <span class="brand-logo"></span>
+                        <span class="brand-logo">
+                            <img src="./assets/img/suntan/logo.png" alt="Home" />
+                        </span>
                         <span class="brand-text">
-                            <span class="text-theme">Suntan</span> Group
+                            <span class="text-theme">Suntan Capital</span>
                         </span>
                     </a>
                 </div>
@@ -71,20 +73,20 @@
         <div id="home" class="content has-bg home">
             <!-- begin content-bg -->
             <div class="content-bg">
-                <img src="./assets/img/bg/bg-home.jpg" alt="Home" />
+                <img src="./assets/img/suntan/boardroom_scap.png" alt="Home" />
             </div>
             <!-- end content-bg -->
             <!-- begin container -->
             <div class="container home-content">
-                <h1>Welcome to Suntan Group</h1>
+                <h1>Welcome</h1>
                 <h3>The vision is brighter than ever.</h3>
                 <p>
                     We have finest team of investment advisors, we value your money and time.<br />
-                    Use our <a href="#">Service</a> to select your best investment plan.
+                    Use our <a href="#service" data-click="scroll-to-target">Service</a> to select your best investment plan.
                 </p>
-                <a href="#" class="btn btn-theme">Start Investment</a> <a href="#" class="btn btn-outline">Contat Us</a><br />
+                <a href="register" class="btn btn-theme">Start Investment</a> <a href="#contact" class="btn btn-outline">Contact Us</a><br />
                 <br />
-                or <a href="#">subscribe</a> newsletter
+                or <a href="#footer" data-click="scroll-to-target">Subscribe</a> newsletter
             </div>
             <!-- end container -->
         </div>
@@ -334,7 +336,7 @@
                         <i class="fa fa-quote-left"></i> Passion leads to design, design leads to performance, <br />
                         performance leads to <span class="text-theme">success</span>!  
                         <i class="fa fa-quote-right"></i>
-                        <small>Suntan Group, Invesment Advisior Teams in Mumbai</small>
+                        <small>Suntan Capital, Invesment Advisior Teams in Mumbai</small>
                     </div>
                     <!-- end col-12 -->
                 </div>
@@ -508,18 +510,18 @@
                 <ul class="pricing-table col-4">
                     <li data-animation="true" data-animation-type="fadeInUp">
                         <div class="pricing-container">
-                            <h3>Starter</h3>
+                            <h3>Free Subscription</h3>
                             <div class="price">
                                 <div class="price-figure">
-                                    <span class="price-number">FREE</span>
+                                    <span class="price-number">Free</span>
                                 </div>
                             </div>
                             <ul class="features">
-                                <li>1GB Storage</li>
+                                <li>3 days</li>
                                 <li>2 Clients</li>
                                 <li>5 Active Projects</li>
                                 <li>5 Colors</li>
-                                <li>Free Goodies</li>
+                                <li>Free Calls</li>
                                 <li>24/7 Email support</li>
                             </ul>
                             <div class="footer">
@@ -529,15 +531,15 @@
                     </li>
                     <li data-animation="true" data-animation-type="fadeInUp">
                         <div class="pricing-container">
-                            <h3>Basic</h3>
+                            <h3>One Day Subscription</h3>
                             <div class="price">
                                 <div class="price-figure">
-                                    <span class="price-number">$9.99</span>
-                                    <span class="price-tenure">per month</span>
+                                    <span class="price-number">INR 3,000</span>
+                                    <span class="price-tenure">per day</span>
                                 </div>
                             </div>
                             <ul class="features">
-                                <li>2GB Storage</li>
+                                <li>1 day</li>
                                 <li>5 Clients</li>
                                 <li>10 Active Projects</li>
                                 <li>10 Colors</li>
@@ -551,15 +553,15 @@
                     </li>
                     <li class="highlight" data-animation="true" data-animation-type="fadeInUp">
                         <div class="pricing-container">
-                            <h3>Premium</h3>
+                            <h3>Weekly Subscription</h3>
                             <div class="price">
                                 <div class="price-figure">
-                                    <span class="price-number">$19.99</span>
-                                    <span class="price-tenure">per month</span>
+                                    <span class="price-number">INR 10,000</span>
+                                    <span class="price-tenure">per Week</span>
                                 </div>
                             </div>
                             <ul class="features">
-                                <li>5GB Storage</li>
+                                <li>7 days</li>
                                 <li>10 Clients</li>
                                 <li>20 Active Projects</li>
                                 <li>20 Colors</li>
@@ -573,14 +575,15 @@
                     </li>
                     <li data-animation="true" data-animation-type="fadeInUp">
                         <div class="pricing-container">
-                            <h3>Lifetime</h3>
+                            <h3>Monthly Subscription</h3>
                             <div class="price">
                                 <div class="price-figure">
-                                    <span class="price-number">$999</span>
+                                    <span class="price-number">INR 30,000</span>
+                                    <span class="price-tenure">per Month</span>
                                 </div>
                             </div>
                             <ul class="features">
-                                <li>Unlimited Storage</li>
+                                <li>30 days</li>
                                 <li>Unlimited Clients</li>
                                 <li>Unlimited Projects</li>
                                 <li>Unlimited Colors</li>
@@ -597,7 +600,25 @@
             <!-- end container -->
         </div>
         <!-- end #pricing -->
-        
+        <div class="stockLine"
+             style="background-color: #808080; height: 25px; width: 100vw; left: 0; bottom: 0; position: fixed; z-index: 500; text-align: center">
+            <marquee id="stockData">
+                <span class="stockText">MARUTI.NSE: 7449.6001</span>
+                    <img src="./assets/img/suntan/Polygon (1).svg" style="width: 21px; vertical-align: middle; margin-left:4px" alt="">
+                <span class="stockValue">-70.5498(-0.9381%)</span>
+                <span class="stockText">RELIANCE.NSE: 1532.3500</span>
+                    <img src="./assets/img/suntan/Polygon (1).svg" style="width: 21px; vertical-align: middle; margin-left:4px" alt="">
+                <span class="stockValue">-48.6500(-3.0772%)</span>
+                <span class="stockText">BOSCHLTD.NSE: 14970.3496</span>
+                    <img src="./assets/img/suntan/Polygon (1).svg" style="width: 21px; vertical-align: middle; margin-left:4px" alt="">
+                <span class="stockValue">-416.8506(-2.7091%)</span>
+                <span class="stockText">EICHERMOT.NSE: 21365.0996</span>
+                    <img src="./assets/img/suntan/Polygon.svg" style="width: 21px; vertical-align: middle; margin-left:4px" alt="">
+                <span class="stockValue">72.9004(0.3424%)</span>
+                <span class="stockText">ESSARSHPNG.NSE: 6.9000</span>
+                    <img src="./assets/img/suntan/Polygon.svg" style="width: 21px; vertical-align: middle; margin-left:4px" alt="">
+                <span class="stockValue">0.1000(1.4706%)</span></marquee>
+        </div>
         <!-- begin #contact -->
         <div id="contact" class="content bg-silver-lighter" data-scrollview="true">
             <!-- begin container -->
@@ -617,7 +638,7 @@
                             We love our customers, so feel free to visit during normal business hours.
                         </p>
                         <p>
-                            <strong>Suntan Group, Inc</strong><br />
+                            <strong>Suntan Capital Pvt. ltd</strong><br />
                             HIRANANDANI MEADOWS, POKHARAN RD 2, THANE WEST-400610<br />
                             India<br />
                             P: (022) 456-7890<br />
@@ -664,16 +685,18 @@
             <!-- end container -->
         </div>
         <!-- end #contact -->
-        
+
         <!-- begin #footer -->
         <div id="footer" class="footer">
             <div class="container">
                 <div class="footer-brand">
-                    <div class="footer-brand-logo"></div>
-                   Suntan Group
+                    <div class="footer-brand-logo">
+                            <img src="./assets/img/suntan/logo.png" alt="Home" height="60px" width="60px"/>
+                    </div>
+                   Suntan Capital Pvt. Ltd
                 </div>
                 <p>
-                    &copy; Copyright Anandita Software Solution 2018 <br />
+                    &copy; Copyright Suntan Software Solutions pvt. Ltd 2019 <br />
                     
                 </p>
                 <p class="social-list">
