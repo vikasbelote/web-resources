@@ -10,7 +10,7 @@ Website: http://www.seantheme.com/color-admin-v4.0/admin/
 .header .navbar-nav > li > a .label,
 .label.label-theme,
 .btn.btn-scroll-to-top {
-    background: #00acac;
+   /* background: #00acac;*/
 }
 .header.navbar-inverse .navbar-brand {
     color: #fff !important;
